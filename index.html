@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЕГЭ по Мемам</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <img id="headerImg" src="./images/skullEge.png">
+            <div><i>ЕГЭ по Мемам 2026</i></div>
+        </header>
+    <div id="registrationPage">
+        <div id="registrationUnit">
+            <h1>Добро пожаловать на ЕГЭ по мемам 2026!</h1>
+            <h3>Как вас зовут?</h3>
+            <div id="FullNameInputs">
+                <input id="surname" type="text" placeholder="Введите свою фамилию" autocomplete="off">
+                <input id="name" type="text" placeholder="Введите своё имя" autocomplete="off">
+                <input id="patronymic" type="text" placeholder="Введите своё отчество" autocomplete="off">
+                <div id="errorMessage">Заполните все поля!</div>
+            </div>
+            <button class="button" id="buttonStart">Начать Экзамен</button>
+        </div>
+    </div>
+    <div id="examPage">
+        <div id="timeIsUp">
+            <h1>Время экзамена истекло</h1>
+            <button class="button" id="buttonTimeIsUp">Сдать работу</button>
+        </div>
+        <div id="noticeOfExclusion">
+                <div><b><p>Вы отстранены от выполнения экзаменационной работы.</p></b>
+                    <p>В ходе проведения экзамена зафиксировано нарушение установленного порядка его прохождения:
+                    вы осуществили переход на другую вкладку браузера либо свернули окно экзаменационной системы.
+                    В соответствии с правилами проведения экзамена подобные действия рассматриваются как
+                    нарушение условий выполнения экзаменационной работы.</p>
+                    <p><b>Ваш экзамен прекращён.<br>Результаты выполненной вами работы аннулируются.</b></p>
+                 <button class="button" id="buttonLeave">Покинуть экзамен<br>(с позором)</button></div>
+        </div>
+        <div id="examContent"> 
+            <div id="countdown">03:55:00</div>
+            <div id="instruction">
+                <h2>Единый государственный экзамен<br> по МЕМАМ 2026</h2>
+                <p>ЕГЭ — лишь одно из жизненных испытаний, которое
+                вам предстоит пройти.
+                Будьте уверены: каждому, кто сидел в социальных сетях, по силам сдать ЕГЭ.
+                Все задания составлены на основе мемов и интернет-культуры 2026 года.
+                Поэтому каждый из вас может успешно сдать экзамен.</p>
+                <h4>Инструкция по выполнению работы</h4>
+                <p>Экзаменационная работа состоит из двух частей, содержащих 26 заданий.
+                Часть 1 содержит 16 заданий, часть 2 содержит 10 заданий.</p>
+                <p>На выполнение экзаменационной работы по Мемам отводится 3 часа 55 минут (235 минут).</p>
+                <p>В заданиях 1–16 вам необходимо выбрать правильный вариант ответа.
+                Цифру, под которой находится выбранный вами вариант, запишите в поле ввода ответа.</p>
+                <p>В заданиях 17–26 вам необходимо самостоятельно написать правильный ответ.
+                Вариантов ответа не будет. Ответ записывайте в любом регистре на кириллице или цифрами,
+                если того требует задание.</p>
+                <p>Баллы, полученные вами за выполненные задания, суммируются.
+                Постарайтесь выполнить как можно больше заданий и набрать наибольшее количество баллов.</p>
+                <h4>Максимальное количество баллов - 100</h4>
+                <P>После завершения работы проверьте, чтобы ответ на каждое задание был дан
+                и записан в правильном формате.</p>
+                <h4><i>Желаем успеха!</i></h4>
+            </div>
+            <div><h2>Часть 1</h2></div>
+            <div class="question" id="question1">
+                <div class="questionContent">
+                    <span class="numberQuestion">1</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В интернет-коммуникации 2026 года широкое
+                        распространение получил глагол <b><i>«могнуть»</i></b>.
+                        Выберите вариант, наиболее точно раскрывающий значение данного слова в контексте
+                        его употребления пользователями социальных сетей.
+                        </div>
+                        <div class="answers">
+                            <p>1) Превзойти кого-либо или что-либо по определённому показателю.</p>
+                            <p>2) Осознать смысл ранее непонятного явления.</p>
+                            <p>3) Оказаться в положении, уступающем другому участнику.</p>
+                            <p>4) Совершить действие за необычайно короткий промежуток времени.</p>
+                        </div>
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question2">
+                <div class="questionContent">
+                    <span class="numberQuestion">2</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В 2026 году особую популярность в социальных сетях приобрели видеоролики,
+                        созданные с использованием технологий искусственного интеллекта.
+                        В подобных видеороликах нередко изображались антропоморфные фрукты,
+                        вступающие в различные взаимоотношения друг с другом.
+                        Используя представленное изображение, определите,
+                        какой персонаж появился в результате союза двух клубник.
+                        </div>
+                        <div class="questionWithImg">
+                            <div class="answers">
+                                <p>1) Клубника.</p>
+                                <p>2) Яблоко.</p>
+                                <p>3) Банан.</p>
+                                <p>4) Ананас.</p>
+                            </div>
+                            <img src="./images/question2.png">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question3">
+                <div class="questionContent">
+                    <span class="numberQuestion">3</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>Какое из перечисленных определений наиболее точно
+                        раскрывает значение термина <b><i>«looksmaxxing»</i></b>,
+                        получившего распространение в интернет-культуре?.
+                        </div>
+                        <div class="answers">
+                            <p>1) Стремление улучшить свою внешность посредством ухода за собой,
+                                изменения стиля и других способов повышения привлекательности.</p>
+                            <p>2) Стремление намеренно сделать свою внешность максимально необычной и вызывающей,
+                                чтобы привлечь внимание окружающих.</p>
+                            <p>3) Способность оценивать внешность
+                                других людей по специальной шкале привлекательности и
+                                определять их социальный статус.</p>
+                            <p>4) Создание цифрового изображения идеальной внешности
+                                с помощью фильтров и технологий искусственного интеллекта.</p>
+                        </div>
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question4">
+                <div class="questionContent">
+                    <span class="numberQuestion">4</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В 2026 году в русскоязычном сегменте интернета получил
+                            распространение мем «Сова на скакалке».
+                            Какое из перечисленных значений наиболее точно
+                            характеризует использование данного мема в интернет-коммуникации?
+                        </div>
+                        <div class="answers">
+                            <p>1) Символ неожиданного успеха, сопровождающего человека в сложной ситуации.</p>
+                            <p>2) Предзнаменование надвигающихся
+                                неприятностей или неблагоприятного исхода событий.</p>
+                            <p>3) Обозначение человека,
+                                который пытается справиться одновременно с
+                                несколькими задачами.</p>
+                            <p>4) Символ абсурдного поведения,
+                                не имеющего никакого отношения к происходящим событиям.</p>
+                        </div>
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question5">
+                <div class="questionContent">
+                    <span class="numberQuestion">5</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В феврале 2026 года широкую известность в
+                        социальных сетях приобрела японская макака по имени Панч.
+                        Особое внимание пользователей привлекла мягкая игрушка,
+                        с которой животное практически не расставалось.
+                        Рассмотрите представленное изображение и определите,
+                        игрушка какого животного была у Панча.
+                        </div>
+                        <div class="questionWithImg">
+                            <div class="answers">
+                                <p>1) Шимпанзе.</p>
+                                <p>2) Макака.</p>
+                                <p>3) Гиббон.</p>
+                                <p>4) Орангутанг.</p>
+
+                            </div>
+                            <img src="./images/question5.png">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question6">
+                <div class="questionContent">
+                    <span class="numberQuestion">6</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В начале 2026 года в социальных сетях широкое распространение получил видеоролик
+                            с участием рэпера Toxi$,
+                            исполняющего композицию NOBODY и танцующего под неё в домашней обстановке.
+                            Данный фрагмент стал основой для многочисленных мемов и коротких видеороликов.
+                            Вспомните, какой предмет исполнитель просит взять в обращении к девушке.
+                        </div>
+                        <div class="answers">
+                            <p>1) Ключи от автомобиля.</p>
+                            <p>2) Мобильный телефон.</p>
+                            <p>3) Кошелёк.</p>
+                            <p>4) Бокал.</p>
+
+                        </div>
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question7">
+                <div class="questionContent">
+                    <span class="numberQuestion">7</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В 2026 году широкую популярность в социальных сетях приобрели видеоролики,
+                            созданные с помощью технологий искусственного интеллекта.
+                            Одним из персонажей, получивших особую известность благодаря подобным видео,
+                            стал герой фильма «Старикам тут не место»,
+                            изображённый на представленном ниже изображении.
+                            Определите имя персонажа.
+                        </div>
+                        <div class="questionWithImg">
+                            <div class="answers">
+                                <p>1) Антон Чигур</p>
+                                <p>2) Антон Чигун</p>
+                                <p>3) Антон Чибур</p>
+                                <p>4) Антон Чарун</p>
+                            </div>
+                            <img src="./images/question7.png">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question8">
+                <div class="questionContent">
+                    <span class="numberQuestion">8</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В 2026 году в социальных сетях приобрёл популярность фрагмент
+                        мультфильма «Академия собственных ошибок, или Братья Пилоты спасают Россию» (1999),
+                        созданного студией «Пилот». Произнесённая в нём реплика впоследствии стала самостоятельным
+                        интернет-мемом и получила широкое распространение среди пользователей.
+                        Выберите вариант, правильно завершающий высказывание персонажа: <i><b>«Мужики, ай-да...»</b></i>
+                        </div>
+                        <div class="answers">
+                            <p>1) ...пирожки трескать!</p>
+                            <p>2) ...пироги лопать!</p>
+                            <p>3) ...пирог уплетать!</p>
+                            <p>4) ...пироги уминать!</p>
+
+                        </div>
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+             <div class="question" id="question9">
+                <div class="questionContent">
+                    <span class="numberQuestion">9</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В 2026 году в русскоязычном сегменте социальных сетей получил
+                            распространение мем «Дом на Алмазной».
+                            Его популярность связана с видеороликом Владуса,
+                            в котором фигурирует необычная история с участием персонажа по имени Леня.
+                            Какой номер дома упоминался в данном меме?
+                        </div>
+                        <div class="answers">
+                            <p>1) 23.</p>
+                            <p>2) 33.</p>
+                            <p>3) 43.</p>
+                            <p>4) 53.</p>
+                        </div>
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question10">
+                <div class="questionContent">
+                    <span class="numberQuestion">10</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В 2026 году в социальных сетях широкую популярность приобрёл интернет-мем
+                            с персонажем по прозвищу «Плаксик»,
+                            отличающимся необычайно выразительной мимикой и большими глазами.
+                            Персонаж появился в комедийном фильме «Сказки на ночь» (2008).
+                            Определите, к какому виду животных относится Плаксик.
+                        </div>
+                        <div class="questionWithImg">
+                            <div class="answers">
+                                <p>1) Декоративный кролик.</p>
+                                <p>2) Морская свинка.</p>
+                                <p>3) Шиншилла.</p>
+                                <p>4) Хомяк.</p>
+                            </div>
+                            <img id="img10" src="./images/question10.png">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question11">
+                <div class="questionContent">
+                    <span class="numberQuestion">11</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В социальных сетях получил распространение мем с изображением саблезубого тигра
+                            Диего из мультфильма «Ледниковый период».
+                            Изображение сопровождается короткой надписью,
+                            ставшей узнаваемой среди пользователей интернет-культуры.
+                            Определите, какое слово использовано в оригинальной версии мема.
+                        </div>
+                        <div class="questionWithImg">
+                            <div class="answers">
+                                <p>1) Шалопай.</p>
+                                <p>2) Негодник.</p>
+                                <p>3) Поганец.</p>
+                                <p>4) Плут.</p>
+                            </div>
+                            <img src="./images/question11.png">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+             <div class="question" id="question12">
+                <div class="questionContent">
+                    <span class="numberQuestion">12</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В одном из музыкальных номеров мультсериала
+                            «Симпсоны» мистер Бёрнс исполняет песню High to Be Loathed,
+                            перечисляя известных персонажей, исторических деятелей и злодеев.
+                            Данная композиция стала источником многочисленных интернет-мемов.
+                            Восстановите последовательность перечисления и определите,
+                            кто следует непосредственно после Ральфа Нейдера.
+                        </div>
+                        <div class="questionWithImg">
+                            <div class="answers">
+                                <p>1) Донки Конг.</p>
+                                <p>2) Дарт Вейдер.</p>
+                                <p>3) Эрик Картман.</p>
+                                <p>4) Саймон Легри.</p>
+                            </div>
+                            <img id="img12" src="./images/question12.png">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question13">
+                <div class="questionContent">
+                    <span class="numberQuestion">13</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>Некоторые интернет-мемы становятся популярными
+                            благодаря коротким разговорным фразам,
+                            которые впоследствии начинают использоваться в качестве самостоятельных реакций.
+                            Одним из таких выражений стало «Да ты чё, базару нет».
+                            Посмотрите на представленные изображения и определите,
+                            кто является автором данной фразы.
+                        </div>
+                        <div class="questionWithImg">
+                            <img id="img13" src="./images/question13.png">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question14">
+                <div class="questionContent">
+                    <span class="numberQuestion">14</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В апреле 2026 года в социальной сети TikTok получил распространение тренд,
+                            в рамках которого обычное математическое равенство «7 × 7 = 49» приобрело необычное значение.
+                            Пользователи стали использовать его для характеристики определённого типа людей,
+                            наделяя данное выражение символическим смыслом.
+                            Что подразумевается под выражением «7 × 7 = 49» в контексте данного интернет-тренда?
+                        </div>
+                        <div class="answers">
+                            <p>1) Человек, который всегда знает, что сказать, и умеет поддержать разговор.</p>
+                            <p>2) Идеальный партнёр, с которым всё складывается легко и естественно.</p>
+                            <p>3) Человек, который отличается необычным мышлением и нестандартным взглядом на мир.</p>
+                            <p>4) Партнёр, который всегда готов удивлять и совершать неожиданные поступки.</p>
+                        </div>
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question15">
+                <div class="questionContent">
+                    <span class="numberQuestion">15</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>Расположите перечисленные ниже интернет-мемы
+                            в хронологическом порядке их появления в 2026 году.
+                            В ответе укажите последовательность букв, соответствующих мемам,
+                            начиная с самого раннего.
+                        </div>
+                        <div class="questionWithImg">
+                            <div class="img15">
+                                <span>1)</span>
+                                <img src="./images/question15_1.jpg">
+                            </div>
+                            <div class="img15">
+                                <span>2)</span>
+                                <img src="./images/question15_2.jpg">
+                            </div>
+                            <div class="img15">
+                                <span>3)</span>
+                                <img src="./images/question15_3.jpg">
+                            </div>
+                            <div class="img15">
+                                <span>4)</span>
+                                <img src="./images/question15_4.png">
+                            </div>
+                            
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="4">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question16">
+                <div class="questionContent">
+                    <span class="numberQuestion">16</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>На представленном изображении показан автор одного из интернет-мемов,
+                            получивших распространение в социальных сетях в 2026 году.
+                            Определите, какой мем связан с изображённым человеком.
+                        </div>
+                        <div class="questionWithImg">
+                            <div class="answers">
+                                <p>1) «Можно. А зачем?»</p>
+                                <p>2) «Гора Эверест на фоне меня - фигня»</p>
+                                <p>3) «Да ты шуешь!»</p>
+                                <p>4) «Я в моменте, но момент не во мне»</p>
+
+                            </div>
+                            <img src="./images/question16.jpg">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off" maxlength="1">
+                    </div>
+                </div>
+                
+            </div>
+            <div><h2>Часть 2</h2></div>
+            <div class="question" id="question17">
+                <div class="questionContent">
+                    <span class="numberQuestion">17</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В социальных сетях получил распространение интернет-мем
+                            с изображением антропоморфного персонажа,
+                            внешность которого основана на бытовом электрическом приборе.
+                            Укажите прозвище данного персонажа, закрепившееся в интернет-культуре.
+                            Ответ запишите одним словом.
+                        </div>
+                        <div class="questionWithImg">
+                            <img id="img17" src="./images/question17.png">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question18">
+                <div class="questionContent">
+                    <span class="numberQuestion">18</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В социальных сетях широкое распространение получил интернет-мем,
+                            основанный на фрагменте произведения, в котором один
+                            из персонажей произносит фразу «Зовусь я гений».
+                            Данное высказывание стало узнаваемым среди пользователей и приобрело самостоятельную
+                            популярность в интернет-культуре.
+                            Определите, как зовут персонажа, произносящего данную фразу.
+                            Ответ запишите двумя словами
+                        </div>
+                        <div class="questionWithImg">
+                        </div>
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question19">
+                <div class="questionContent">
+                    <span class="numberQuestion">19</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>На представленном изображении запечатлена женщина,
+                            ставшая героиней популярного интернет-мема. Вспомните и запишите фразу,
+                            произнесённую ею в оригинальном видеоролике.
+                        </div>
+                        <div class="questionWithImg">
+                            <img src="./images/question19.jpg">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question20">
+                <div class="questionContent">
+                    <span class="numberQuestion">20</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В одном из видеороликов блогера Vanzai запечатлён момент,
+                            ставший основой для популярного интернет-мема.
+                            Определите, на какой секунде видеоролика,
+                            согласно оригинальному высказыванию автора, начались слёзы.
+                            Ответ запишите только числом, без указания единицы измерения.
+                        </div>
+                        <div class="questionWithImg">
+                            <img id="img20" src="./images/question21.png">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question21">
+                <div class="questionContent">
+                    <span class="numberQuestion">21</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>На представленном изображении показан эпизод из популярного интернет-мема.
+                            Один из персонажей передаёт другому закрытый конверт.
+                            Определите, что находится внутри конверта.
+                            Ответ запишите в виде словосочетания из двух слов.
+                        </div>
+                        <div class="questionWithImg">
+                            <img src="./images/question20.jpg">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off">
+                    </div>
+                </div>
+                
+            </div>
+             <div class="question" id="question22">
+                <div class="questionContent">
+                    <span class="numberQuestion">22</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>На представленном изображении показан эпизод мультсериала «Рик и Морти»,
+                            ставший основой для популярного интернет-мема.
+                            Вспомните и запишите слово, произнесённое в адрес Джерри в данном моменте.
+                        </div>
+                        <div class="questionWithImg">
+                            <img src="./images/question22.png">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question23">
+                <div class="questionContent">
+                    <span class="numberQuestion">23</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В игре Left 4 Dead 2 один из персонажей произносит фразу
+                            <i><b>«Класс, прям как во втором Team Fortress»</b></i>,
+                            ставшую популярной среди пользователей игровых сообществ.
+                            Укажите имя данного персонажа.
+                        </div>
+                        <div class="questionWithImg">
+                            <img src="./images/question23.jpg">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question24">
+                <div class="questionContent">
+                    <span class="numberQuestion">24</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>Летом 2026 года в социальных сетях широкую
+                            популярность приобрёл необычный енот из Сиэтла,
+                            внешний вид которого привлёк внимание пользователей
+                            и стал основой для многочисленных интернет-мемов.
+                            Укажите кличку данного животного.
+                        </div>
+                        <div class="questionWithImg">
+                            <img src="./images/question24.jpg">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question25">
+                <div class="questionContent">
+                    <span class="numberQuestion">25</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>На представленном изображении запечатлена американская актриса,
+                            фотография которой стала популярным реакционным мемом в социальных сетях.
+                            Укажите полное имя и фамилию актрисы.
+                        </div>
+                        <div class="questionWithImg">
+                            <img src="./images/question25.jpg">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <input class="questionInput" type="text" autocomplete="off">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="question" id="question26">
+                <div class="questionContent">
+                    <span class="numberQuestion">26</span>
+                    <div class="AnswersQuestionImgContainer">
+                        <div>В начале 2026 года широкое распространение в социальных сетях получил
+                            видеомем с изображением быка,
+                            исполняющего известную русскую скороговорку.
+                            Воспроизведите полный текст скороговорки которую он пел.
+                        </div>
+                        <div class="questionWithImg">
+                            <img src="./images/question26.jpg">
+                        </div>
+                       
+                        <label>Ответ: </label>
+                        <textarea class="questionInput" autocomplete="off"></textarea>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="button" id="buttonFinishWork">Сдать работу</button>
+        </div>
+    </div>
+    <div id="resultPage">
+        <div id="resultContent">
+            <div>
+                <div><h4>РЕЗУЛЬТАТЫ ЕГЭ</h4></div>
+                <h4>ПО МЕМАМ 2026</h4>
+            </div>
+            <div>
+                <p id="memeRank">МЕМОЛОГ Ⅱ СТЕПЕНИ</p>
+                <div id="fullName" class="textGrey">Иванов Иван Иванович</div>
+            </div>
+            <div id="resultPointContainer">
+                <div class="textGrey">НАБРАНО БАЛЛОВ</div>
+                <div id="totalPoint" class="numberOfPoints">87/100</div>
+                <div id="examPassed">ЭКЗАМЕН СДАН</div>
+                <div class="textGrey">порог - 27 баллов</div>
+            </div>
+            <div>
+                <div id="rawScores" class="textGrey">Первичных баллов набрано - 24/26</div>
+                <div id="scaledScores" class="textGrey">Вторичных баллов набрано - 87/100</div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Ваш ответ</th>
+                        <th>Верный ответ</th>
+                        <th>Баллов получено</th>
+                    </tr>
+                </thead>
+                <tbody id="answersTableBody">
+
+                </tbody>
+            </table>
+            <div class="textGrey" id="totalTime">Время сдачи экзамена - 00:00:00</div>
+            <hr>
+            <div>Спасибо за сдачу экзамена!🎓</div>
+            <div>Надеюсь вам понравилось и вы хорошо провели время =)</div>
+            <div>Если хотите поддержать проект и меня, можете отправить донат на
+                <a href="https://boosty.to/amochannel/donate" target="_blank">бусти </a>
+            </div>
+            <div>Буду очень вам благодарен за любую поддержку❤️</div>
+                
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
