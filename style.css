@@ -307,6 +307,7 @@ img{
 }
 
 #noticeOfExclusion{
+    display:none;
     position:fixed;
     text-align:center;
     box-sizing:border-box;
