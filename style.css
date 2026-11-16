@@ -382,3 +382,9 @@ td{
     color:white;
     border-radius: clamp(3px,4vw,10px);
 }
+
+#wishSucces{
+    box-sizzing:border-box;
+    margin-top:15px;
+}
+    
